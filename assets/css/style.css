@@ -1,0 +1,150 @@
+    html,body{
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+
+    .navbar {
+      background-color: #002244;
+    }
+
+    .navbarNav {
+      align-items: flex-end;
+      text-align: right;
+    }
+
+    .navbar-brand,
+    .nav-link {
+      color: #fff !important;
+    }
+
+    .hero {
+      position: relative;
+      height: 75vh;
+      background: url('../img/bg.jpg') center center / cover no-repeat;
+      overflow: hidden;
+    }
+
+    .hero p{
+      font-size:x-large;
+    }
+
+    .hero-overlay {
+      background: linear-gradient(to bottom right,
+          rgba(0, 33, 66, 0.85),
+          rgba(0, 15, 30, 0.85)),
+        rgba(0, 33, 66, 0.6);
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+      backdrop-filter: blur(2px);
+    }
+
+  .hero .container {
+    z-index: 2;
+    position: relative;
+  }
+
+  .border-gold {
+  border-color: #C8A23A !important; 
+}
+
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Fade In */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in-up {
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-delay: 0.3s;
+  animation-fill-mode: both;
+}
+
+.animate-fade-in {
+  animation-name: fadeIn;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+}
+
+
+    .text-gold {
+      color: #be9920;
+    }
+
+
+    section {
+      padding: 50px 20px;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #002244;
+    }
+
+    .experience-item::before {
+      content: "✔ ";
+      color: #2f267c;
+    }
+
+    footer {
+      background-color: #002244;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      margin-bottom: 15px;
+    }
+.service-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid #001f3f; /* dark blue border */
+  margin: 0 auto 20px;
+  color: #001f3f; /* icon color */
+  font-size: 2.5rem; /* bigger icon */
+}
+
+.card {
+  border: 1px solid #e0e0e0; /* subtle border */
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
